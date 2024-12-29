@@ -35,7 +35,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/NonebotGUI/nonebot-flutter-webui' }
+      { icon: 'github', link: 'https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard' }
     ]
   }
 }
