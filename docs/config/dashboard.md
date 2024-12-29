@@ -93,3 +93,7 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x dashboar
 现在你可以打开浏览器，输入 `http://ip:port` 访问 WebUI 了！
 
 ![img](/guide/webui_login.webp)
+
+::: tip
+首次加载时间较长，请耐心等待（速度取决于网络速度和服务器带宽）
+:::
