@@ -28,6 +28,8 @@ export default defineConfig({
       {
         text: '配置',
         items: [
+          { text: 'Docker 安装(推荐)', link: '/config/docker' },
+          { text: '速通', link: '/config/fast' },
           { text: '配置 NoneBot Agent', link: '/config/nba' },
           { text: '配置 Dashboard', link: '/config/dashboard' }
         ]
