@@ -35,6 +35,11 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x agent-li
 }
 ```
 ### freeText 说明
+
+::: tip
+`freeText` 在 `0.1.4` 版本已经废弃，现在 Agent 会自动修改 `free` 命令的输出语言，无需再手动配置。
+:::
+
 `freeText` 是用于 Agent 在 Linux 或 MacOS 下执行 `free` 命令时的关键字，用于获取内存信息。默认值为 `Mem`，如果你的系统中执行 `free` 命令后显示的并不是 `Mem`，请修改此值。<br>
 
 #### e.g.
