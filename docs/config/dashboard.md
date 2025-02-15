@@ -63,7 +63,13 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x dashboar
     "port": 2519, // Agent 的端口
     "token": "123456"  // Agent 的 token
   },
-  "connectionMode": 2 // 连接模式，默认为 2，下文会详细说明
+  "connectionMode": 2, // 连接模式，默认为 2，下文会详细说明
+  "theme": {
+    "color": "light", // 主题颜色，可选值为 "light" 或 "dark"
+    "img": "default", // 自定义登录页图片，填入 "default" 或图片的 URL
+    "text": "default", // 自定义登录页文字，填入 "default" 或文字内容
+    "hitokoto": true  // 是否显示一言
+  }
 }
 ```
 ### connectionMode 说明
