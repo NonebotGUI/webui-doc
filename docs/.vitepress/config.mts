@@ -26,6 +26,13 @@ export default defineConfig({
         ]
       },
       {
+        text: '友链',
+        items: [
+          { text: 'LazyTea', link: '/friend-link/lazytea.md' },
+          { text: '_RyF的雨云优惠折扣', link: '/friend-link/ryf.md'}
+        ]
+      },
+      {
         text: '配置',
         items: [
           { text: 'Docker 安装(推荐)', link: '/config/docker' },
