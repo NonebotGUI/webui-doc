@@ -4,7 +4,17 @@
   <a href="https://github.com/NonebotGUI/nonebot-webui-docker">
     <img src="https://img.shields.io/badge/Github-black?logo=Github" style="margin-right: 5px" alt="Github" />
   </a>
+  <a title="Crowdin" target="_blank" href="https://hub.docker.com/r/myxuebi/nonebot-webui">
+    <img src="https://img.shields.io/docker/pulls/myxuebi/nonebot-webui">
+</a>
 </p>
+
+✨容器已更换为Debian系统,可放心使用✨
+
+#### Docker加速站(自建)
+使用文档：[Docker加速服务](https://docker.myxuebi.top/) 
+
+加速URL： ```https://docker-hub.myxuebi.top```
 
 
 ## 命令行安装运行 （推荐）
