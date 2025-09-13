@@ -24,14 +24,19 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x agent-li
 
 ```json
 {
-  "host": "0.0.0.0", // 监听地址，如需要监听 IPv6 请改为 "::"
+  "host": "127.0.0.1", // 监听地址，如需要监听 IPv6 请改为 "::"
   "port": 2519, // 监听端口
-  "token": "", // 用于 Agent 与 WebUI 通信的 Token
+  "token": "", // 用于 Agent 与 WebUI 通信的 Token，首次启动会随机生成
   "freeText": "Mem", // Linux 或者 MacOS 下执行 `free` 命令的关键字，具体请看下文
   "python":"default", // Python 命令路径
   "nbcli":"default",  // nbcli 命令路径
   "color":"light",  // 主题颜色，可选值为 light 和 dark
-  "checkUpdate": true  // 是否检查更新
+  "checkUpdate": true,  // 是否检查更新
+  "wss": {  // https/wss 配置项，如果你不知道这是什么，请不要修改
+  "enabled": false, // 启用状态
+  "certpath": "", // 证书路径
+  "keypath": "" // 私钥路径
+  }
 }
 ```
 ### freeText 说明
@@ -53,6 +58,17 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x agent-li
 
 图中箭头指向的 `内存` 就是 `freeText` 的值，需要更改一下，否则 WebUI 无法获取到内存信息。
 
+
+## 关于 WebSocket Token
+首次启动时Agent端将随机生成一个 WebSocket Token 来确保与前端的连接安全，你将会看到类似如下的输出
+
+```shell
+2025-09-13 13:47:08 [WARN] | NoneBot Agent | Config file not found, creating a new one...
+2025-09-13 13:47:08 [SUCCESS] | NoneBot Agent | Config file created successfully.
+```
+
+这时请打开你的 `config.json` 文件，复制 `token` 的值， 你会得到类似于 `1823dbcd` 的字符串，请将其填入 Dashboard 的 `config.json` 中，在配置 Dashboard 的章节中会说明。
+
 ## 启动
 在配置完成后，运行 Agent 程序，如果你看到类似这样的日志，那么恭喜你，Agent 启动成功了！
 
@@ -61,10 +77,10 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x agent-li
 2024-12-28 22:16:46 [INFO] | NoneBot Agent | Welcome to NoneBot Agent!
 2024-12-28 22:16:46 [INFO] | NoneBot Agent | By 【夜风】NightWind(2125714976@qq.com)
 2024-12-28 22:16:46 [INFO] | NoneBot Agent | Released under the GPL-3 License.
-2024-12-28 22:16:46 [INFO] | NoneBot Agent | Version: pre-0.1.2
+2024-12-28 22:16:46 [INFO] | NoneBot Agent | Version: 0.1.7
 2024-12-28 22:16:46 [INFO] | NoneBot Agent | HTTP server is starting...
 2024-12-28 22:16:46 [INFO] | NoneBot Agent | Started server process [999287]
-2024-12-28 22:16:46 [INFO] | NoneBot Agent | Serving at http://0.0.0.0:2519 (Ctrl+C to quit)
-2024-12-28 22:16:46 [INFO] | NoneBot Agent | WebSocket server listening on ws://0.0.0.0:2519/nbgui/v1/ws
+2024-12-28 22:16:46 [INFO] | NoneBot Agent | Serving at http://127.0.0.1:2519 (Ctrl+C to quit)
+2024-12-28 22:16:46 [INFO] | NoneBot Agent | WebSocket server listening on ws://127.0.0.1:2519/nbgui/v1/ws
 
 ```

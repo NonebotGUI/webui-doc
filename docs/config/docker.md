@@ -16,6 +16,12 @@
 
 加速URL： ```https://docker-hub.myxuebi.top```
 
+
+### Docker 磁盘挂载说明
+::: warning
+未挂载目录前只能将bot创建放在/data目录下，否则会出错或造成严重后果
+:::
+
 ### 命令行安装运行 （推荐）
 ```shell
 sudo docker run -d  \
@@ -58,10 +64,6 @@ dashboard配置文件：/opt/nb-webui/dashboard/config.json
 
 agent配置文件：/opt/nb-webui/agent/config.json 
 
-
-### Docker 磁盘挂载说明
-> [!warning] 
-> 未挂载目录前只能将bot数据放在/data目录下，否则会出错或造成严重后果
 #### 已运行容器后追加挂载目录
 
 1. 先停止并删除原有容器（不会影响本地已挂载的数据）：

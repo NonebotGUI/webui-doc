@@ -55,13 +55,13 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x dashboar
 
 ```json
 {
-  "host": "0.0.0.0",  // 监听地址，如果需要监听 IPv6 请改为 "::"
+  "host": "127.0.0.1",  // 监听地址，如果需要监听 IPv6 请改为 "::"
   "port": 8025,  // 开放的端口
-  "password": "123456", // 访问 WebUI 的密码
+  "password": "", // 访问 WebUI 的密码，首次启动会随机生成
   "connection": { // 连接到 Agent 的配置
     "host": "127.0.0.1", // Agent 的地址，如果是 IPv6 的地址请在前面加上方括号，如 "[::1]"
     "port": 2519, // Agent 的端口
-    "token": "123456"  // Agent 的 token
+    "token": ""  // Agent 的 WebSocket Token
   },
   "connectionMode": 2, // 连接模式，默认为 2，下文会详细说明
   "theme": {
@@ -72,6 +72,10 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x dashboar
   }
 }
 ```
+### Agent 的 WebSocket Token 说明
+为了确保连接安全性，从 `Agent 0.1.7` 以及 `Dashboard 0.1.11` 开始，首次生成将会随机生成一个默认的面板密码和 Agent WebSokcet Token,你需要在 Agent 的 `config.json` 中获取到 `token` 并填进 Dashboard 的 `config.json` 中。
+
+
 ### connectionMode 说明
 `connectionMode` 为连接模式，有以下几种模式可供选择：
 
@@ -84,8 +88,10 @@ Linux 和 MacOS 需要给予文件执行权限，可以通过 `chmod +x dashboar
 
 ```shell
 2024-12-29 11:03:54 [SUCCESS] | Dashboard | WebSocket connection established.
-2024-12-29 11:03:54 [INFO] | Dashboard | Listening on http://0.0.0.0:8082
+2024-12-29 11:03:54 [INFO] | Dashboard | Listening on http://127.0.0.1:8025
 ```
+如果是首次启动，你的终端会打印出随机密码
+
 
 在 Agent 中，你将会看到如下输出：
 
