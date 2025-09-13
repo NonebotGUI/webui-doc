@@ -56,4 +56,4 @@
 | 功能        | 入口                | 备注                                                                   |
 | ----------- | ----------------- | -------------------------------------------------------------------- |
 | 删除 Bot | /bot/remove/&lt;id&gt; | &lt;id&gt;为Bot的uuid |
-| 永久删除 Bot | /bot/dedelete/&lt;id&gt; | &lt;id&gt;为Bot的uuid，该入口会一同删除Bot的目录 |
+| 永久删除 Bot | /bot/delete/&lt;id&gt; | &lt;id&gt;为Bot的uuid，该入口会一同删除Bot的目录 |
