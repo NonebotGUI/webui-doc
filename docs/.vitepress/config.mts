@@ -38,6 +38,7 @@ export default defineConfig({
           { text: 'Docker 安装(推荐)', link: '/config/docker' },
           { text: '速通', link: '/config/fast' },
           { text: '配置 NoneBot Agent', link: '/config/nba' },
+          { text: '使用移动客户端进行连接（Android）', link: '/config/mobile' },
           { text: '配置 Dashboard', link: '/config/dashboard' }
         ]
       },
