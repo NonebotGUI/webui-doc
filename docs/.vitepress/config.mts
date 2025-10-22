@@ -29,7 +29,8 @@ export default defineConfig({
         text: '友链',
         items: [
           { text: 'LazyTea', link: '/friend-link/lazytea.md' },
-          { text: '_RyF的雨云优惠折扣', link: '/friend-link/ryf.md'}
+          { text: '_RyF的雨云优惠折扣', link: '/friend-link/ryf.md'},
+          { text: '哈基米的个人站', link: '/friend-link/lilyxuan.md'}
         ]
       },
       {
