@@ -40,6 +40,7 @@ export default defineConfig({
           { text: '速通', link: '/config/fast' },
           { text: '配置 NoneBot Agent', link: '/config/nba' },
           { text: '使用移动客户端进行连接（Android）', link: '/config/mobile' },
+          { text: '在手表上进行连接（Android/WearOS）', link: '/config/wearos' },
           { text: '配置 Dashboard', link: '/config/dashboard' }
         ]
       },
