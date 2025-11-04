@@ -10,7 +10,7 @@
 WebUI 的移动客户端实现，用于解决 Web 版本加载缓慢的问题，同时大大提高了便携性。
 
 ## 安装
-前往 [这里](https://github.com/NonebotGUI/nonebot-webui-mobile/releases)下载最新版本的对应架构的安装包并安装，一般来说选择 `arm64` 的架构。<br>
+前往 [这里](https://github.com/NonebotGUI/nonebot-webui-mobile/releases)下载最新版本的对应架构的安装包并安装，一般来说选择 `arm64` 的架构，如果不确定，可以直接下载 `universal` 。<br>
 
 
 ::: tip
