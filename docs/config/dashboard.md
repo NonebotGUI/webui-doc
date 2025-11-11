@@ -10,7 +10,7 @@
 WebUI 的本体，开放给用户的 Web 界面，用于管理 NoneBot 的运行。
 
 ## 安装
-前往 [这里](https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard/releases)下载最新版本的对应系统的 `self-host` 程序以及 `dashboard-index.zip` 文件，并将 `dashboard-index.zip` 中的 `web` 目录解压到与 `self-host` 程序同级目录内。<br>
+前往 [这里](https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard/releases)下载最新版本的对应系统的 `self-host` 程序以及 `dashboard-index-canvaskit.zip` 文件，并将 `dashboard-index-canvaskit.zip` 中的 `web` 目录解压到与 `self-host` 程序同级目录内。<br>
 
 ::: tip
 为了避免配置文件冲突，请不要将 dashboard 与前文的 Agent 放在同一个文件夹内。
@@ -19,9 +19,6 @@ WebUI 的本体，开放给用户的 Web 界面，用于管理 NoneBot 的运行
 ![img](/guide/dashboard_release.webp)
 
 
-### 我应该下载哪个 dashboard-index.zip ?
-推荐下载 `dashboard-index-canvaskit.zip`，该版本使用 `canvaskit` 作为渲染器，体验较好且性能高，但初次加载时需要较长时间。<br>
-`dashboard-index-html.zip` 使用 `html` 作为渲染器，性能较低且伴随卡顿现象，但首次加载耗时较短，不推荐使用。
 
 #### 解压完以后，你的目录结构应该是这样的：
 
