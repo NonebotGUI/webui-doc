@@ -7,5 +7,5 @@
 使用如下命令进行安装
 
 ```
-curl -fsSL https://api.nbgui.top/api/nbgui/script/install.sh | sudo bash
+curl -fsSL https://api.nbgui.top/api/nbgui/script/install.sh | bash
 ```
