@@ -7,7 +7,7 @@ NoneBot WebUI 只是工具，所以并不提供 `nb-cli` 的安装，需要用�
 ## 环境要求
 
 - Windows10 及以上
-- GNU/Linux 任意发行版
+- 基于 **glibc** 的任意主流 GNU/Linux 发行版，基于 **musl** 的发行版(如 `Alpine`)可能会有些奇奇怪怪的问题
 - MacOS
 
 ::: danger
@@ -19,7 +19,7 @@ NoneBot WebUI 只是工具，所以并不提供 `nb-cli` 的安装，需要用�
 
 ## NoneBot CLI
 
-即 `nb-cli`， nbgui 使用 nb-cli 来进行对 bot 的操作。在安装好 Python 后使用以下命令安装：
+即 `nb-cli`， webui 使用 nb-cli 来进行对 bot 的操作。在安装好 Python 后使用以下命令安装：
 
 1.安装 `pipx`
 
