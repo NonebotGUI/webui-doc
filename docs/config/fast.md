@@ -6,7 +6,7 @@
 
 ## 准备工作
 首先，你需要下载以下文件（以Windows为例）：
-- [dashboard-index.zip](https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard/releases/latest/download/dashboard-index-canvaskit.zip)
+- [dashboard-index-canvaskit.zip](https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard/releases/latest/download/dashboard-index-canvaskit.zip)
 - [dashboard-windows.exe](https://github.com/NonebotGUI/nonebot-flutter-webui-dashboard/releases/latest/download/dashboard-windows.exe)
 - [agent-windows.exe](https://github.com/NonebotGUI/nonebot-agent/releases/latest/download/agent-windows.exe)
 
