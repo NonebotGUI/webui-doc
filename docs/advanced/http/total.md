@@ -32,6 +32,8 @@
 | 获取系统状态      | /system/status    |                                                                      |
 | 获取系统平台      | /system/platform  |                                                                      |
 | 获取Agent版本信息 | /version          |                                                                      |
+| 读取配置      | /bot/env/&lt;id&gt;/&lt;env&gt; | &lt;env&gt; 仅限 .env, .env.prod, .env.dev |
+| 下载文件      | /file/download/&lt;id&gt;/&lt;path&gt; |                                                              |
 
 ## POST类型请求
 ::: tip
@@ -50,6 +52,11 @@
 | 安装适配器 | /adapter/install ||
 | 安装驱动器 | /driver/install ||
 | 重命名Bot|/bot/rename/&lt;id&gt;|&lt;id&gt;为Bot的uuid|
+| 切换自动启动 | /bot/autostart/&lt;id&gt; | &lt;id&gt;为Bot的uuid |
+| 编辑配置 | /bot/env/&lt;id&gt;/&lt;env&gt; | &lt;env&gt; 仅限 .env, .env.prod, .env.dev |
+| 新增配置项 | /bot/env/add/&lt;id&gt; | &lt;id&gt;为Bot的uuid |
+| 删除配置项 | /bot/env/delete/&lt;id&gt; | &lt;id&gt;为Bot的uuid |
+| 上传文件 | /file/upload/ | 需携带查询参数 filename, id, path |
 
 
 ## DELETE类型请求
